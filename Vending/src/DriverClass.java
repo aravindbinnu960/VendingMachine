@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 //import java.lang.*;
 public class DriverClass {
@@ -26,7 +25,7 @@ switch(choice){
 				System.out.println("enter number of Sprite bottles:");
 				quantity=s.nextInt();
 				System.out.println("you have choosen "+quantity+"bottels");
-				bill1=quantity*70;
+				bill1+=quantity*70;
 				System.out.println("bill on sprite:"+bill1);
        
        break;
@@ -34,14 +33,14 @@ switch(choice){
 				System.out.println("enter number of pizza pieces:");
         		quantity=s.nextInt();
         		System.out.println("you have choosen "+quantity+"piecess");
-        		bill2=quantity*20;
+        		bill2+=quantity*20;
         		System.out.println("bill on Pizza"+bill2);
                  break;
 		case 3:	System.out.println("You have choosen Puff");
 				System.out.println("enter number of pieces:");
 				quantity=s.nextInt();
 				System.out.println("you have choosen "+quantity+"pieces");
-				bill3=quantity*30;
+				bill3+=quantity*30;
 				System.out.println("bill on puffs:"+bill3);
         
 				break;
@@ -49,11 +48,13 @@ switch(choice){
 				System.out.println("enter number of water bottles:"); 
         		quantity=s.nextInt();
         		System.out.println("you have choosen "+quantity+"bottels");
-        		bill4=quantity*10;
+        		bill4+=quantity*10;
         		System.out.println("bill on water bottles:"+bill4);
          
         		break;
-		case 5: //System.exit(0);
+		case 5: System.out.println("canceled order");
+        
+			System.exit(0);
 				count++;
 				break;
 		case 6:System.out.println("please insert money in socket");	
